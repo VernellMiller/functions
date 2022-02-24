@@ -8,9 +8,9 @@ Calculating Percentages
 
 */
 
-const calcPercentage = function(make, attempt) {
-    const percentage = make / attempt * 100;
-    return percentage;
+const calcPercentage = function (make, attempt) {
+  const percentage = (make / attempt) * 100;
+  return percentage;
 };
 
 console.log(calcPercentage(6, 10));
