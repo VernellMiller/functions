@@ -27,7 +27,7 @@ const minMax = function (arr) {
 
     if (curValue > max) max = curValue; // if the current value is greater than max, save that value as the max.
   }
-  console.log(`min: ${min} max: ${max}`); // lof the min and the max tho the console.
+  console.log(`min: ${min} max: ${max}`); // log the min and the max to the console.
 };
 
 minMax([19, 8, 33, 4, 261]);
