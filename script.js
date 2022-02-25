@@ -1,17 +1,13 @@
 "use strict";
 
-/*
+// I am a huge sports fan and I often want to know the percentages of a particular statistic.
 
----> Calculating Percentages
-
-
-    - I am a huge sports fan and I often am wanting to know the percentages of a particular statistic.
-
-*/
+// ---> Calculating Percentages
 
 const calcPercentage = function (make, attempt) {
-  const percentage = (make / attempt) * 100;
-  console.log(`percentage: ${percentage}`);
+  const percentage = (make / attempt) * 100; // divide the makes by the total number of attempts and multiply it by 100. Then save that as the percentage.
+
+  console.log(`percentage: ${percentage}`); // log the percentage to the console.
 };
 
 calcPercentage(6, 10);
@@ -21,15 +17,17 @@ calcPercentage(6, 10);
 // ---> Find the LOWEST nad HIGHEST values of an array.
 
 const minMax = function (arr) {
-  let min = arr[0];
-  let max = arr[0];
+  let min = arr[0]; // save the first index value in an array as min.
+  let max = arr[0]; // save the first index value in an array as max.
 
+  // loop over the length of any array.
   for (let i = 0; i < arr.length; i++) {
-    const curValue = arr[i];
-    if (curValue < min) min = curValue;
-    if (curValue > max) max = curValue;
+    const curValue = arr[i]; // save current array index value in a variable
+    if (curValue < min) min = curValue; // if the current value is less than min, value save that current value as the min.
+
+    if (curValue > max) max = curValue; // if the current value is greater than max, save that value as the max.
   }
-  console.log(`min: ${min} max: ${max}`);
+  console.log(`min: ${min} max: ${max}`); // lof the min and the max tho the console.
 };
 
 minMax([19, 8, 33, 4, 261]);
