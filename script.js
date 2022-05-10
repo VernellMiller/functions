@@ -46,8 +46,9 @@ minMax(highScores);
 const returnedString = function (string) {
   console.log(string);
 
-  let arr = string.split("");
+  let arr = string.split("").filter((letter, index) => (index + 1) % 3 === 0);
   console.log(arr);
+
   for (let i = 0; i < arr.length; i++) {
     arr.splice(2, 1);
     console.log(arr);
