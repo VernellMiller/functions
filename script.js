@@ -48,39 +48,7 @@ const returnedString = function (string) {
 
   let arr = string.split("").filter((letter, index) => (index + 1) % 3 === 0);
   console.log(arr);
-
-  for (let i = 0; i < arr.length; i++) {
-    arr.splice(2, 1);
-    console.log(arr);
-    return arr;
-  }
-
-  for (let i = 0; i < string.length; i++) {
-    const testing = [
-      {
-        return_string: "",
-      },
-    ];
-
-    console.log(string[i]);
-    console.log(string.substr(0, 3));
-    const firstThreeLetters = [string.substr(0, 3, 6)];
-    console.log(firstThreeLetters);
-    console.log(firstThreeLetters.pop());
-    console.log(firstThreeLetters);
-    console.log(string.substr(0, 3));
-
-    console.log(string[i]);
-
-    console.log(testing[0].return_string);
-
-    return;
-  }
-  console.log(string.substr(2, 1));
-
-  console.log();
-
-  return string;
+  return arr;
 };
 
 returnedString("iamyourlyftdriver");
