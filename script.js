@@ -47,7 +47,7 @@ const returnedString = function (string) {
   console.log(string);
 
   let arr = string.split("").filter((letter, index) => (index + 1) % 3 === 0);
-  console.log(arr);
+  console.log(arr.join(""));
   return arr;
 };
 
