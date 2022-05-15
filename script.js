@@ -52,3 +52,31 @@ const returnedString = function (string) {
 };
 
 returnedString("iamyourlyftdriver");
+
+// -----------------------------------------------------------------------
+
+// compare two arrays
+
+const playerSelections = [142, 39, 7, 113];
+const winningNumbers = [16, 12, 91, 52];
+let result = "";
+
+const checkIfWinner = function (arr1, arr2) {
+  arr1.sort();
+  arr2.sort();
+
+  let str1 = arr1.join("");
+  let str2 = arr2.join("");
+  console.log(str1);
+  console.log(str2);
+
+  result =
+    str1 == str2
+      ? "You are a winner Today"
+      : "Your selections do not match today. Try again Tomorrow.";
+
+  console.log(result);
+  return result;
+};
+
+console.log(checkIfWinner(playerSelections, winningNumbers));
