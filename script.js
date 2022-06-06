@@ -55,7 +55,7 @@ returnedString("iamyourlyftdriver");
 
 // -----------------------------------------------------------------------
 
-// compare two arrays
+// ---> compare two arrays
 
 const playerSelections = [142, 39, 7, 113];
 const winningNumbers = [16, 12, 91, 52];
@@ -80,3 +80,24 @@ const checkIfWinner = function (arr1, arr2) {
 };
 
 console.log(checkIfWinner(playerSelections, winningNumbers));
+
+// -----------------------------------------------------------------------
+
+// ---> reverse a number
+
+let str;
+const reverseNumber = function (number) {
+  str = number.toString().split("").reverse().join("");
+};
+
+reverseNumber(123456789);
+console.log(str);
+
+const reverseNumber2 = function (number) {
+  number = number.toString().split("").reverse().join("");
+  return number;
+};
+
+console.log(reverseNumber2(123456789));
+
+// -----------------------------------------------------------------------
