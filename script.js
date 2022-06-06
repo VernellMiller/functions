@@ -23,7 +23,7 @@ const minMax = function (arr) {
   // loop over the length of any array.
   for (let i = 0; i < arr.length; i++) {
     const curValue = arr[i]; // save current array index value in a variable
-    if (curValue < min) min = curValue; // if the current value is less than min, value save that current value as the min.
+    if (curValue < min) min = curValue; // if the current value is less than min, save that value as the min.
 
     if (curValue > max) max = curValue; // if the current value is greater than max, save that value as the max.
   }
@@ -101,3 +101,40 @@ const reverseNumber2 = function (number) {
 console.log(reverseNumber2(123456789));
 
 // -----------------------------------------------------------------------
+
+// ---> palindrome or not - a word, phrase, or sequence that reads the same backward as forward,
+
+const isPalindrome = function (palindrome) {
+  let input = palindrome.replace(/\s/g, "");
+  let output = palindrome
+    .replace(/\s/g, "")
+    .toString()
+    .split("")
+    .reverse()
+    .join("");
+  let result;
+  console.log(input);
+  console.log(output);
+
+  if (input === "") {
+    result = "no input found";
+    return result;
+  }
+
+  // if (input === output) {
+  //   result = `${palindrome} is a palindrome`;
+  // } else {
+  //   result = `${palindrome} does not match the criteria of a palindrome.`;
+  // }
+  // return result;
+
+  let result1 =
+    input === output
+      ? `"${palindrome}" is a palindrome`
+      : `"${palindrome}" does not match the criteria of a palindrome.`;
+  return result1;
+};
+
+console.log(
+  isPalindrome("on a clover if alive erupts a vast pure evil a fire volcano")
+);
